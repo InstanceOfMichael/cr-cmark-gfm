@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.30.1">
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "";
+</script>
+
+  <meta id="repository-name" content="github.com/amauryt/cr-cmark-gfm">
+  <title>README - github.com/amauryt/cr-cmark-gfm</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent " data-id="github.com/amauryt/cr-cmark-gfm/Cmark" data-name="cmark">
+      <a href="Cmark.html">Cmark</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/Alignment" data-name="cmark::alignment">
+      <a href="Cmark/Alignment.html">Alignment</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/DelimType" data-name="cmark::delimtype">
+      <a href="Cmark/DelimType.html">DelimType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/Error" data-name="cmark::error">
+      <a href="Cmark/Error.html">Error</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/Event" data-name="cmark::event">
+      <a href="Cmark/Event.html">Event</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/EventIterator" data-name="cmark::eventiterator">
+      <a href="Cmark/EventIterator.html">EventIterator</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/Extension" data-name="cmark::extension">
+      <a href="Cmark/Extension.html">Extension</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/FencingDetails" data-name="cmark::fencingdetails">
+      <a href="Cmark/FencingDetails.html">FencingDetails</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/HTMLRenderer" data-name="cmark::htmlrenderer">
+      <a href="Cmark/HTMLRenderer.html">HTMLRenderer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/ListType" data-name="cmark::listtype">
+      <a href="Cmark/ListType.html">ListType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/Node" data-name="cmark::node">
+      <a href="Cmark/Node.html">Node</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/NodeMaker" data-name="cmark::nodemaker">
+      <a href="Cmark/NodeMaker.html">NodeMaker</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/NodeSetterError" data-name="cmark::nodesettererror">
+      <a href="Cmark/NodeSetterError.html">NodeSetterError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/NodeType" data-name="cmark::nodetype">
+      <a href="Cmark/NodeType.html">NodeType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/Option" data-name="cmark::option">
+      <a href="Cmark/Option.html">Option</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/Renderer" data-name="cmark::renderer">
+      <a href="Cmark/Renderer.html">Renderer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/TreeManipulationError" data-name="cmark::treemanipulationerror">
+      <a href="Cmark/TreeManipulationError.html">TreeManipulationError</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<p><a href="https://travis-ci.org/amauryt/cr-cmark-gfm" target="_blank"><img src="https://travis-ci.org/amauryt/cr-cmark-gfm.svg?branch=master" alt="Build Status"/></a></p>
+
+<h1>cr-cmark-gfm</h1>
+
+<p><a href="https://amauryt.github.io/cr-cmark-gfm/" target="_blank">API Documentation</a></p>
+
+<p>Crystal C bindings for cmark-gfm, with support for the latest version of Github Flavored Markdown (v.29). For more information regarding the available options and extensions see the official <a href="https://github.github.com/gfm/" target="_blank">GFM spec documentation</a>.</p>
+
+<p>Features:</p>
+
+<ul><li>Simple parsing and rendering of markdown content</li><li>Render any node of the markdown AST in the following formats:</li><li>HTML</li><li>XML</li><li>Plaintext</li><li>Commonmark (including GFM-only nodes)</li><li>Groff man pages</li><li>LaTeX</li><li>Create custom renderers or customize the included crystal HTML renderer, which outputs the same HTML as the library's C renderer</li><li>Getters and setters for almost all of the properties of AST nodes</li><li>Tree traversal and manipulation</li><li>Directly create and customize nodes</li></ul></ul>
+
+<h2>Installation</h2>
+
+<p>Add the dependency to your <code>shard.yml</code> and then run <code>shards install</code>:</p>
+
+<pre><code class="language-yaml">dependencies:
+  cmark:
+    github: amauryt/cr-cmark-gfm</code></pre>
+
+<p>This will automatically clone the cmark-gfm repository and compile both <code>libcmark-gfm</code> and <code>libcmark-gfm-extensions</code>, which will be then statically linked.</p>
+
+<h2>Usage</h2>
+
+<p>The <code><a href="Cmark.html">Cmark</a></code> module offers high-level parsing and rendering of markdown content, be it Commonmark-only, full GFM, or partially GFM.</p>
+
+<p>If the content is Commonmark-only use the respective <em>commonmark</em>  parsing and HTML rendering methods for the best performance. If all of the GFM extensions must be enabled use the <em>gfm</em> methods. For partial support of GFM extensions use the more generic <em>document</em> methods.</p>
+
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;cmark&quot;</span>
+
+options <span class="o">=</span> <span class="t">Option</span>.flags(<span class="t">Nobreaks</span>, <span class="t">ValidateUTF8</span>) <span class="c"># deafult is Option::None</span>
+extensions <span class="o">=</span> <span class="t">Extension</span>.flags(<span class="t">Table</span>, <span class="t">Tasklist</span>)  <span class="c"># default is Extension::None</span>
+
+commonmark_only <span class="o">=</span> <span class="t">File</span>.read(<span class="s">&quot;commonmark_only.md&quot;</span>)
+full_gfm <span class="o">=</span> <span class="t">File</span>.read(<span class="s">&quot;full_gfm.md&quot;</span>)
+partially_gfm <span class="o">=</span> <span class="t">File</span>.read(<span class="s">&quot;partially_gfm.md&quot;</span>)
+
+<span class="c"># Direct parsing and rendering</span>
+
+commonmark_only_html  <span class="o">=</span> <span class="t">Cmark</span>.commonmark_to_html(commonmark_only, options)
+full_gfm_html         <span class="o">=</span> <span class="t">Cmark</span>.gfm_to_html(full_gfm, options)
+partially_gfm_html    <span class="o">=</span> <span class="t">Cmark</span>.document_to_html(partially_gfm, options, extensions)
+
+<span class="c"># Parse to obtain a document node for further processing</span>
+
+commonmark_only_node  <span class="o">=</span> <span class="t">Cmark</span>.parse_commonmark(commonmark_only, options)
+full_gfm_node         <span class="o">=</span> <span class="t">Cmark</span>.parse_gfm(full_gfm, options)
+partially_gfm_node    <span class="o">=</span> <span class="t">Cmark</span>.parse_document(partially_gfm, options, extensions)</code></pre>
+
+<h3>Node creation and rendering</h3>
+
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;cmark&quot;</span>
+<span class="k">include</span> <span class="t">Cmark</span>
+
+contents <span class="o">=</span> <span class="t">NodeMaker</span>.strong
+contents.append_child <span class="t">NodeMaker</span>.text(<span class="s">&quot;click here&quot;</span>)
+node <span class="o">=</span> <span class="t">NodeMaker</span>.link(url: <span class="s">&quot;http://example.com&quot;</span>, title: <span class="s">&quot;Example&quot;</span>)
+node.append_child(contents)
+
+node.<span class="k">type</span>.link? <span class="c"># =&gt; true</span>
+node.url <span class="c"># =&gt; http://example.com</span>
+node.title <span class="c"># =&gt; &quot;Example&quot;</span>
+node.title <span class="o">=</span> <span class="s">&quot;My Example&quot;</span>
+
+node.render_commonmark <span class="c"># =&gt; [**click here**](http://example.com &quot;My Example&quot;)</span>
+node.render_plaintext <span class="c"># =&gt; click here</span></code></pre>
+
+<h3>Tree traversal and manipulation</h3>
+
+<pre><code class="language-crystal"><span class="c"># Using the node from the previous example</span>
+
+node.previous <span class="c"># =&gt; nil</span>
+node.first_child <span class="c"># =&gt; &lt;Cmark::Node::Strong&gt;</span>
+last_child <span class="o">=</span>  node.last_child.not_nil!
+last_child <span class="o">==</span> node.first_child <span class="c"># =&gt; true</span>
+last_child.<span class="k">next</span> <span class="c"># =&gt; &lt;Cmark::Node::Text&gt;</span>
+
+iterator <span class="o">=</span> <span class="t">EventIterator</span>.<span class="k">new</span>(node)
+
+iterator.each <span class="k">do</span> <span class="o">|</span>event<span class="o">|</span>
+  node <span class="o">=</span> event.node
+  <span class="k">if</span> event.enter?
+    puts <span class="s">&quot;entering node&quot;</span>
+  <span class="k">end</span>
+  <span class="k">if</span> event.modifiable? && node.<span class="k">type</span>.strong?
+    <span class="c"># Transform strong text into unformatted text</span>
+    text_node <span class="o">=</span> node.first_child.not_nil!
+    node.parent.not_nil!.prepend_child(text_node)
+    node.unlink
+  <span class="k">end</span>
+<span class="k">end</span>
+
+node.render_commonmark <span class="c"># =&gt; [click here](http://example.com &quot;My Example&quot;)</span></code></pre>
+
+<h3>Custom rendering</h3>
+
+<pre><code class="language-crystal"><span class="k">class</span> <span class="t">MyHTMLRenderer</span> <span class="o">&lt;</span> <span class="t">Cmark</span><span class="t">::</span><span class="t">HTMLRenderer</span>
+  <span class="c"># Container nodes receive `node` and `entering`</span>
+  <span class="k">def</span> <span class="m">strong</span>(node, entering)
+    <span class="k">if</span> entering
+      <span class="k">out</span> <span class="s">&quot;&lt;b&gt;&quot;</span>
+    <span class="k">else</span>
+      <span class="k">out</span> <span class="s">&quot;&lt;/b&gt;&quot;</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+
+  <span class="c"># Leaf nodes only receive `node`</span>
+  <span class="k">def</span> <span class="m">text</span>(node)
+    <span class="k">out</span> node.literal.gsub(<span class="s">&quot;click&quot;</span>, <span class="s">&quot;don&#39;t click&quot;</span>)
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c"># Using the node from the &quot;Node creation and rendering&quot; example</span>
+
+options <span class="o">=</span> <span class="t">Option</span>.flags(<span class="t">Nobreaks</span>, <span class="t">ValidateUTF8</span>) <span class="c"># deafult is Option::None</span>
+extensions <span class="o">=</span> <span class="t">Extension</span>.flags(<span class="t">Table</span>, <span class="t">Tasklist</span>) <span class="c"># default is Extension::None</span>
+
+renderer <span class="o">=</span> <span class="t">MyHTMLRenderer</span>.<span class="k">new</span>(options, extensions)
+html <span class="o">=</span> renderer.render(node)
+html <span class="c"># =&gt; &lt;a href=&quot;http://example.com&quot; title=&quot;My Example&quot;&gt;&lt;b&gt;don&#39;t click here&lt;/b&gt;&lt;/a&gt;</span></code></pre>
+
+<h2>Alternatives</h2>
+
+<p>Now that that the Crystal language (subset of) Markdown is no longer part of the public API in the standard library, other alternatives (from which this shard took inspiration) are:</p>
+
+<ul><li><a href="https://github.com/icyleaf/markd" target="_blank">markd</a>: A pure Crystal port of <a href="https://github.com/jgm/commonmark.js" target="_blank">commonmark.js</a>. Compliant to Commonmark v0.27, but it has no GFM support.</li><li><a href="https://github.com/ysbaddaden/crystal-cmark" target="_blank">crystal-cmark</a>: Minimal parsing and rendering C bindings with <a href="https://github.com/commonmark/cmark" target="_blank">cmark</a> v0.29 but without GFM support.</li><li><a href="https://github.com/mamantoha/crystal-cmark-gfm" target="_blank">crystal-cmark-gfm</a>: Minimal C bindings for parsing and rendering with <a href="https://github.com/github/cmark-gfm" target="_blank">cmark-gfm</a> v0.29.0.gfm.0.</li></ul>
+
+<h2>Contributing</h2>
+
+<ol><li>Fork it (&lt;https://github.com/amauryt/cr-cmark-gfm/fork>)</li><li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li><li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li><li>Push to the branch (<code>git push origin my-new-feature</code>)</li><li>Create a new Pull Request</li></ol>
+
+<h2>Contributors</h2>
+
+<ul><li><a href="https://github.com/amauryt" target="_blank">Amaury Trujillo</a> - creator and maintainer</li></ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.30.1">
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "";
+</script>
+
+  <meta id="repository-name" content="github.com/amauryt/cr-cmark-gfm">
+  <title>Cmark - github.com/amauryt/cr-cmark-gfm</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="github.com/amauryt/cr-cmark-gfm/Cmark" data-name="cmark">
+      <a href="Cmark.html">Cmark</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/Alignment" data-name="cmark::alignment">
+      <a href="Cmark/Alignment.html">Alignment</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/DelimType" data-name="cmark::delimtype">
+      <a href="Cmark/DelimType.html">DelimType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/Error" data-name="cmark::error">
+      <a href="Cmark/Error.html">Error</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/Event" data-name="cmark::event">
+      <a href="Cmark/Event.html">Event</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/EventIterator" data-name="cmark::eventiterator">
+      <a href="Cmark/EventIterator.html">EventIterator</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/Extension" data-name="cmark::extension">
+      <a href="Cmark/Extension.html">Extension</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/FencingDetails" data-name="cmark::fencingdetails">
+      <a href="Cmark/FencingDetails.html">FencingDetails</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/HTMLRenderer" data-name="cmark::htmlrenderer">
+      <a href="Cmark/HTMLRenderer.html">HTMLRenderer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/ListType" data-name="cmark::listtype">
+      <a href="Cmark/ListType.html">ListType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/Node" data-name="cmark::node">
+      <a href="Cmark/Node.html">Node</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/NodeMaker" data-name="cmark::nodemaker">
+      <a href="Cmark/NodeMaker.html">NodeMaker</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/NodeSetterError" data-name="cmark::nodesettererror">
+      <a href="Cmark/NodeSetterError.html">NodeSetterError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/NodeType" data-name="cmark::nodetype">
+      <a href="Cmark/NodeType.html">NodeType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/Option" data-name="cmark::option">
+      <a href="Cmark/Option.html">Option</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/Renderer" data-name="cmark::renderer">
+      <a href="Cmark/Renderer.html">Renderer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/amauryt/cr-cmark-gfm/Cmark/TreeManipulationError" data-name="cmark::treemanipulationerror">
+      <a href="Cmark/TreeManipulationError.html">TreeManipulationError</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> Cmark
+
+</h1>
+
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>This module offers high-level parsing and rendering of markdown content, be it Commonmark-only, full GFM, or partially GFM.</p>
+
+<p>If the content is Commonmark-only use the respective <em>commonmark</em>  parsing and
+HTML rendering methods for the best performance.
+If all of the GFM extensions must be enabled use the <em>gfm</em> methods.
+For partial support of GFM extensions use the more generic <em>document</em> methods.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark/alignment.cr#L1" target="_blank">
+        cmark/alignment.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark/lib_cmark.cr#L1" target="_blank">
+        cmark/lib_cmark.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark/delim_type.cr#L3" target="_blank">
+        cmark/delim_type.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark/error.cr#L1" target="_blank">
+        cmark/error.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark/event.cr#L1" target="_blank">
+        cmark/event.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark/event_iterator.cr#L2" target="_blank">
+        cmark/event_iterator.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark/extension.cr#L1" target="_blank">
+        cmark/extension.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark/fencing_details.cr#L1" target="_blank">
+        cmark/fencing_details.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark/list_type.cr#L3" target="_blank">
+        cmark/list_type.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark/node_type.cr#L3" target="_blank">
+        cmark/node_type.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark/node.cr#L4" target="_blank">
+        cmark/node.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark/node_maker.cr#L3" target="_blank">
+        cmark/node_maker.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark/option.cr#L3" target="_blank">
+        cmark/option.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark/renderer.cr#L1" target="_blank">
+        cmark/renderer.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark/renderers/html_renderer.cr#L3" target="_blank">
+        cmark/renderers/html_renderer.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark/version.cr#L1" target="_blank">
+        cmark/version.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark.cr#L11" target="_blank">
+        cmark.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>Constant Summary</h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="VERSION">
+        <strong>VERSION</strong> = <code><span class="s">&quot;0.1.0&quot;</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+
+
+  <h2>Class Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#commonmark_to_html(text:String,options=Option::None):String-class-method" class="signature"><strong>.commonmark_to_html</strong>(text : String, options = <span class="t">Option</span><span class="t">::</span><span class="t">None</span>) : String</a>
+        
+          <div class="summary"><p>Renders a Commonmark-only text as HTML.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#document_to_html(text:String,options=Option::None,extensions=Extension::None):String-class-method" class="signature"><strong>.document_to_html</strong>(text : String, options = <span class="t">Option</span><span class="t">::</span><span class="t">None</span>, extensions = <span class="t">Extension</span><span class="t">::</span><span class="t">None</span>) : String</a>
+        
+          <div class="summary"><p>Renders commonmark text as HTML.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#gfm_to_html(text:String,options=Option::None):String-class-method" class="signature"><strong>.gfm_to_html</strong>(text : String, options = <span class="t">Option</span><span class="t">::</span><span class="t">None</span>) : String</a>
+        
+          <div class="summary"><p>Renders commonmark text with all of the GFM extensions enabled as HTML.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#parse_commonmark(text:String,options=Option::None):Node-class-method" class="signature"><strong>.parse_commonmark</strong>(text : String, options = <span class="t">Option</span><span class="t">::</span><span class="t">None</span>) : Node</a>
+        
+          <div class="summary"><p>Parses a Commonmark-only document text.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#parse_document(text:String,options=Option::None,extensions=Extension::None):Node-class-method" class="signature"><strong>.parse_document</strong>(text : String, options = <span class="t">Option</span><span class="t">::</span><span class="t">None</span>, extensions = <span class="t">Extension</span><span class="t">::</span><span class="t">None</span>) : Node</a>
+        
+          <div class="summary"><p>Parses a commonmark document text.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#parse_gfm(text:String,options=Option::None):Node-class-method" class="signature"><strong>.parse_gfm</strong>(text : String, options = <span class="t">Option</span><span class="t">::</span><span class="t">None</span>) : Node</a>
+        
+          <div class="summary"><p>Parses a commonmark document text with all of the GFM extensions enabled.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+
+
+  <h2>Class Method Detail</h2>
+  
+    <div class="entry-detail" id="commonmark_to_html(text:String,options=Option::None):String-class-method">
+      <div class="signature">
+        
+        def self.<strong>commonmark_to_html</strong>(text : String, options = <span class="t">Option</span><span class="t">::</span><span class="t">None</span>) : String
+
+        <a class="method-permalink" href="#commonmark_to_html(text:String,options=Option::None):String-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Renders a Commonmark-only text as HTML.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="document_to_html(text:String,options=Option::None,extensions=Extension::None):String-class-method">
+      <div class="signature">
+        
+        def self.<strong>document_to_html</strong>(text : String, options = <span class="t">Option</span><span class="t">::</span><span class="t">None</span>, extensions = <span class="t">Extension</span><span class="t">::</span><span class="t">None</span>) : String
+
+        <a class="method-permalink" href="#document_to_html(text:String,options=Option::None,extensions=Extension::None):String-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Renders commonmark text as HTML.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark.cr#L30" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="gfm_to_html(text:String,options=Option::None):String-class-method">
+      <div class="signature">
+        
+        def self.<strong>gfm_to_html</strong>(text : String, options = <span class="t">Option</span><span class="t">::</span><span class="t">None</span>) : String
+
+        <a class="method-permalink" href="#gfm_to_html(text:String,options=Option::None):String-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Renders commonmark text with all of the GFM extensions enabled as HTML.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark.cr#L25" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="parse_commonmark(text:String,options=Option::None):Node-class-method">
+      <div class="signature">
+        
+        def self.<strong>parse_commonmark</strong>(text : String, options = <span class="t">Option</span><span class="t">::</span><span class="t">None</span>) : <a href="Cmark/Node.html">Node</a>
+
+        <a class="method-permalink" href="#parse_commonmark(text:String,options=Option::None):Node-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Parses a Commonmark-only document text.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark.cr#L39" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="parse_document(text:String,options=Option::None,extensions=Extension::None):Node-class-method">
+      <div class="signature">
+        
+        def self.<strong>parse_document</strong>(text : String, options = <span class="t">Option</span><span class="t">::</span><span class="t">None</span>, extensions = <span class="t">Extension</span><span class="t">::</span><span class="t">None</span>) : <a href="Cmark/Node.html">Node</a>
+
+        <a class="method-permalink" href="#parse_document(text:String,options=Option::None,extensions=Extension::None):Node-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Parses a commonmark document text.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark.cr#L46" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="parse_gfm(text:String,options=Option::None):Node-class-method">
+      <div class="signature">
+        
+        def self.<strong>parse_gfm</strong>(text : String, options = <span class="t">Option</span><span class="t">::</span><span class="t">None</span>) : <a href="Cmark/Node.html">Node</a>
+
+        <a class="method-permalink" href="#parse_gfm(text:String,options=Option::None):Node-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Parses a commonmark document text with all of the GFM extensions enabled.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/amauryt/cr-cmark-gfm/blob/fa090a837ed61b18d413d5c6a8022435af32fd21/src/cmark.cr#L52" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
